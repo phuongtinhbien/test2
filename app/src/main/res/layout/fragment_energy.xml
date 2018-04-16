@@ -16,7 +16,7 @@
           android:layout_width="match_parent"
           app:cardCornerRadius="5dp"
           android:layout_margin="5dp"
-          app:cardElevation="20dp"
+          app:cardElevation="4dp"
           android:layout_height="320dp">
 
          <TextView
@@ -42,7 +42,7 @@
            app:cardCornerRadius="5dp"
            android:layout_margin="5dp"
 
-           app:cardElevation="20dp"
+           app:cardElevation="4dp"
            android:layout_height="180dp">
 
            <com.github.mikephil.charting.charts.LineChart
@@ -65,7 +65,7 @@
            android:layout_width="match_parent"
            app:cardCornerRadius="5dp"
            android:layout_margin="5dp"
-           app:cardElevation="20dp"
+           app:cardElevation="4dp"
            android:layout_height="180dp">
            <com.github.mikephil.charting.charts.LineChart
                android:layout_width="match_parent"
@@ -86,7 +86,7 @@
            app:cardCornerRadius="5dp"
            android:layout_margin="5dp"
 
-           app:cardElevation="20dp"
+           app:cardElevation="4dp"
            android:layout_height="180dp">
 
            <com.github.mikephil.charting.charts.LineChart

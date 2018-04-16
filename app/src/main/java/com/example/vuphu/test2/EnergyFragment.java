@@ -231,7 +231,7 @@ public class EnergyFragment extends Fragment implements
     }
     private SpannableString generateCenterSpannableText() {
 
-        SpannableString s = new SpannableString("Enerrgy Usage\neach week");
+        SpannableString s = new SpannableString("Enerrgy Usage");
         s.setSpan(new RelativeSizeSpan(1.7f), 0, s.length(), 0);
 //        s.setSpan(new StyleSpan(Typeface.NORMAL), 14, s.length() - 15, 0);
 //        s.setSpan(new ForegroundColorSpan(Color.GRAY), 14, s.length() - 15, 0);

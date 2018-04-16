@@ -109,6 +109,20 @@ public class RoomFragment extends Fragment {
 
                         croller_main.setLabel("OFF");
                         break;
+                    case R.id.choice_cool:
+                        SharedPreferences sharedPreferences = getActivity().getSharedPreferences("special_mode",MODE_PRIVATE);
+                        croller_main.setMax(50);
+                        croller_main.setProgress(sharedPreferences.getInt("cooling",0));
+                        idDeg.setText(sharedPreferences.getInt("cooling",0)+"");
+                        croller_main.setLabel("Cooling");
+                        break;
+                    case R.id.choice_away:
+                        SharedPreferences shared = getActivity().getSharedPreferences("special_mode",MODE_PRIVATE);
+                        croller_main.setMax(50);
+                        croller_main.setProgress(shared.getInt("away",0));
+                        idDeg.setText(shared.getInt("away",0)+"");
+                        croller_main.setLabel("Away");
+                        break;
                 }
             }
         });
@@ -143,7 +157,7 @@ public class RoomFragment extends Fragment {
             mode mode = gson.fromJson(getmode.getString(name,""), com.example.vuphu.test2.mode.class);
 
             if (mode== null){
-                Toast.makeText(getContext(), "You have yet not create schedule", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(getContext(), "You have yet not create schedule", Toast.LENGTH_SHORT).show();
                 croller_main.setProgress(room.getTemp());
                 croller_main.setLabel("");
             }
@@ -158,7 +172,7 @@ public class RoomFragment extends Fragment {
             String name = sharedPreferences.getString("Afternoon","");
             mode mode = gson.fromJson(getmode.getString(name,""), com.example.vuphu.test2.mode.class);
             if (mode== null){
-                Toast.makeText(getContext(), "You have yet not create schedule", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(getContext(), "You have yet not create schedule", Toast.LENGTH_SHORT).show();
                 croller_main.setProgress(room.getTemp());
                 croller_main.setLabel("");
             }
@@ -173,7 +187,7 @@ public class RoomFragment extends Fragment {
             String name = sharedPreferences.getString("Night","");
             mode mode = gson.fromJson(getmode.getString(name,""), com.example.vuphu.test2.mode.class);
             if (mode == null){
-                Toast.makeText(getContext(), "You have yet not create schedule", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(getContext(), "You have yet not create schedule", Toast.LENGTH_SHORT).show();
                 croller_main.setProgress(room.getTemp());
                 croller_main.setLabel("");
             }

@@ -17,8 +17,8 @@
                 android:background="@drawable/toggle"
                 app:tbgChildSpacing="auto"
                 android:layout_marginTop="20dp"
-                android:layout_marginLeft="50dp"
-                android:layout_marginRight="50dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
                 android:layout_marginBottom="20dp"
 
                 app:tbgCheckedButton="@+id/choice_a">
@@ -41,13 +41,29 @@
                     android:textColor="@color/colorPrimary"
                     app:tbgRadioStyle="true"
                     android:text="AUTO"/>
+                <com.nex3z.togglebuttongroup.button.CircularToggle
+                    android:id="@+id/choice_cool"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:tbgMarkerColor="@color/color7"
+                    android:textColor="@color/colorPrimary"
+                    app:tbgRadioStyle="true"
+                    android:text="COOL"/>
+                <com.nex3z.togglebuttongroup.button.CircularToggle
+                    android:id="@+id/choice_away"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:tbgMarkerColor="#f8b500"
+                    android:textColor="@color/colorPrimary"
+                    app:tbgRadioStyle="true"
+                    android:text="AWAY"/>
 
                 <com.nex3z.togglebuttongroup.button.CircularToggle
                     android:id="@+id/choice_c"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/colorPrimary"
-                    app:tbgMarkerColor="@color/colorAccent"
+                    app:tbgMarkerColor="#f05053"
                     app:tbgRadioStyle="true"
                     android:text="OFF"/>
 

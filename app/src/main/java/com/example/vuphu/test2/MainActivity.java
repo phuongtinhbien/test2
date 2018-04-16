@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity
                     remove(getSupportFragmentManager().findFragmentById(R.id.content)).commit();
         }
         setTitle("Rooms");
-        transaction.replace(R.id.content, HeatFragment.newInstance()).addToBackStack(null).commit();
+        transaction.replace(R.id.content, HeatFragment.newInstance()).commit();
         navigationView.setCheckedItem(R.id.nav_heating);
         sharedPreferences = getSharedPreferences("mode",MODE_PRIVATE);
         editor = sharedPreferences.edit();
@@ -151,11 +151,6 @@ public class MainActivity extends AppCompatActivity
         }
 
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-        if(getSupportFragmentManager().findFragmentById(R.id.container) != null) {
-            getSupportFragmentManager()
-                    .beginTransaction().
-                    remove(getSupportFragmentManager().findFragmentById(R.id.content)).commit();
-        }
         transaction.replace(R.id.content, temp).commit();
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
